@@ -1,0 +1,448 @@
+body {
+    overflow: hidden;
+}
+
+/* 1st Page CSS */
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#button {
+    background-color: rgb(41, 218, 41);
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    border-radius: 15px;
+    top: 3.5%;
+    left: 92.5%;
+    text-decoration: none;
+    z-index: 2;
+}
+#button:hover {
+    background-color: green;
+}
+
+    @keyframes moveDown {
+        0%   { top: -250px; }
+        100% { top: 50px; }
+    }
+
+        #title {
+        position: absolute;
+        animation: moveDown 3.5s ease-in-out forwards;
+        top: -250px;
+        left: 37.50%;
+        width: 800px;
+        height: 25px;
+        color: gold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        text-decoration: underline;
+        text-align: center;
+        z-index: 2;
+        }
+        #title:first-letter {
+        font-size: 5rem;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        #woodenplank {
+            position:absolute;
+            height: 500px;
+            width: 600px;
+            transform: scale(0.25);
+            top: 50px;
+            left: 800px;
+            background-image: url('');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+/* 2nd Page CSS */
+        #nextbutton {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+            z-index: 2;
+        }
+        #backbutton {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+            z-index: 2;
+        }
+
+        #table {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.85);
+            top: 250px;
+            left: 750px;
+            background-image: url('table.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        #chair {
+            position: absolute;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.85);
+            top: 150px;
+            left: 430px;
+            background-image: url('chair.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        #bbear {
+            position: absolute;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.5);
+            top: 30px;
+            left: 410px;
+            background-image: url('bbearsitting.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes moveright {
+        0%   { left: 1550px; }
+        100% { left: 1100px; }
+    }
+
+        #pbear {
+            position: relative;
+            height: 600px;
+            width: 800px;
+            animation: moveright 3.5s ease-in-out forwards;
+            transform: scale(1.1);
+            top: -450px;
+            left: 1500px;
+            background-image: url('pbear.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes moveleft {
+        0%   { left: -500px; }
+        100% { left: 600px; }
+    }
+
+        #mbear {
+            position: relative;
+            height: 600px;
+            width: 800px;
+            transform: scale(1.1);
+            animation: moveleft 3.5s ease-in-out forward;
+            top: -450px;
+            left: -500px;
+            background-image: url('mbear.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        #soup1 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.25);
+            top: 50px;
+            left: 810px;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        #soup2 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.25);
+            top: 75px;
+            left: 945px;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes movingLeft {
+        0%   { left: -545px; }
+        0%   {top: 30px; }
+        90% { left: 650px; }
+        100% {left: 650px; }
+        100% {top: 60px; }
+    } 
+        #soup3 {
+            position: relative;
+            height: 500px;
+            width: 800px;
+            animation: movingLeft 3.5s ease-in-out forwards;
+            transform: scale(0.25);
+            top: 30px;
+            left: -545px;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+#nextbutton:hover {
+    background-color: green;
+}
+#backbutton:hover {
+    background-color: green;
+}
+/* 3rd CSS Page */
+        #nextbutton2 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+            z-index: 2;
+        }
+        #backbutton2 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+            z-index: 2;
+        }
+
+#nextbutton2:hover {
+    background-color: green;
+}
+#backbutton2:hover {
+    background-color: green;
+}
+
+/* 4th CSS Page */
+        #nextbutton3 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+        }
+        #backbutton3 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+        }
+#nextbutton3:hover {
+    background-color: green;
+}
+#backbutton3:hover {
+    background-color: green;
+}
+
+/* CSS Page 5 */
+        #nextbutton4 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+        }
+        #backbutton4 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+        }
+#nextbutton4:hover {
+    background-color: green;
+}
+#backbutton4:hover {
+    background-color: green;
+}
+
+/* CSS Page 6 */
+
+#nextbutton5:hover {
+    background-color: green;
+}
+#backbutton5:hover {
+    background-color: green;
+}
+
+/* CSS Page 6 */
+        #nextbutton5 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+        }
+        #backbutton5 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+        }
+
+/* CSS Page 7 */
+        #nextbutton6 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+        }
+        #backbutton6 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+        }
+#nextbutton6:hover {
+    background-color: green;
+}
+#backbutton6:hover {
+    background-color: green;
+}
+
+/* CSS Page 8 */
+
+#backtostart:hover {
+    background-color: green;
+}
+#backbutton7:hover {
+    background-color: green;
+}
