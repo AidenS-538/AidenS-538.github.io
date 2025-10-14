@@ -166,7 +166,8 @@ body {
 
         @keyframes moveleft {
         0%   { left: -500px; }
-        100% { left: 600px; }
+        80% { left: 600px; }
+        100% {left: 250px;}
     }
 
         #mbear {
@@ -174,8 +175,8 @@ body {
             height: 600px;
             width: 800px;
             transform: scale(1.1);
-            animation: moveleft 3.5s ease-in-out forward;
-            top: -450px;
+            animation: moveleft 3s ease-in-out forwards;
+            top: -1000px;
             left: -500px;
             background-image: url('mbear.png');
             background-repeat: no-repeat;
