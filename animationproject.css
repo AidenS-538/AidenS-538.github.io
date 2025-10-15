@@ -61,19 +61,6 @@ body {
             background-repeat: no-repeat;
             z-index: 1;
         }
-
-        #woodenplank {
-            position:absolute;
-            height: 500px;
-            width: 600px;
-            transform: scale(0.25);
-            top: 50px;
-            left: 800px;
-            background-image: url('');
-            background-repeat: no-repeat;
-            z-index: 2;
-        }
-
 /* 2nd Page CSS */
         #nextbutton {
             background-color: rgb(41, 218, 41);
@@ -115,7 +102,7 @@ body {
             height: 500px;
             width: 800px;
             transform: scale(0.85);
-            top: 250px;
+            top: 350px;
             left: 750px;
             background-image: url('table.png');
             background-repeat: no-repeat;
@@ -127,7 +114,7 @@ body {
             height: 525px;
             width: 800px;
             transform: scale(0.85);
-            top: 150px;
+            top: 250px;
             left: 430px;
             background-image: url('chair.png');
             background-repeat: no-repeat;
@@ -139,7 +126,7 @@ body {
             height: 525px;
             width: 800px;
             transform: scale(0.5);
-            top: 30px;
+            top: 130px;
             left: 410px;
             background-image: url('bbearsitting.png');
             background-repeat: no-repeat;
@@ -157,7 +144,7 @@ body {
             width: 800px;
             animation: moveright 3.5s ease-in-out forwards;
             transform: scale(1.1);
-            top: -450px;
+            top: -350px;
             left: 1500px;
             background-image: url('pbear.png');
             background-repeat: no-repeat;
@@ -176,7 +163,7 @@ body {
             width: 800px;
             transform: scale(1.1);
             animation: moveleft 3s ease-in-out forwards;
-            top: -1000px;
+            top: -900px;
             left: -500px;
             background-image: url('mbear.png');
             background-repeat: no-repeat;
@@ -188,7 +175,7 @@ body {
             height: 500px;
             width: 800px;
             transform: scale(0.25);
-            top: 50px;
+            top: 150px;
             left: 810px;
             background-image: url('soupbowl.png');
             background-repeat: no-repeat;
@@ -200,7 +187,7 @@ body {
             height: 500px;
             width: 800px;
             transform: scale(0.25);
-            top: 75px;
+            top: 175px;
             left: 945px;
             background-image: url('soupbowl.png');
             background-repeat: no-repeat;
@@ -209,10 +196,10 @@ body {
 
         @keyframes movingLeft {
         0%   { left: -545px; }
-        0%   {top: 30px; }
+        0%   {top: 130px; }
         90% { left: 650px; }
         100% {left: 650px; }
-        100% {top: 60px; }
+        100% {top: 160px; }
     } 
         #soup3 {
             position: relative;
@@ -220,7 +207,7 @@ body {
             width: 800px;
             animation: movingLeft 3.5s ease-in-out forwards;
             transform: scale(0.25);
-            top: 30px;
+            top: 130px;
             left: -545px;
             background-image: url('soupbowl.png');
             background-repeat: no-repeat;
@@ -275,6 +262,97 @@ body {
 #backbutton2:hover {
     background-color: green;
 }
+
+        @keyframes walking1 {
+        0% {left: 110px;}
+        100% {left: -1400px;}
+        }
+        #bbear2 {
+            position: relative;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.2);
+            animation: walking1 5.5s ease-in forwards;
+            top: 430px;
+            left: 110px;
+            background-image: url('bbearsitting.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes walking2 {
+        0% {left: 310px;}
+        100% {left: -1400px;}
+        }
+        #mbear2 {
+            position: relative;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.5);
+            animation: walking2 5.5s ease-in forwards;
+            animation-delay: 0.5s;
+            top: -170px;
+            left: 310px;
+            background-image: url('mbear.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes walking3 {
+        0% {left: 810px;}
+        100% {left: -1400px;}
+        }
+
+        #pbear2 {
+            position: relative;
+            height: 525px;
+            width: 400px;
+            transform: scale(0.6);
+            animation: walking3 5.5s ease-in forwards;
+            animation-delay: 0.5s;
+            top: -730px;
+            left: 810px;
+            background-image: url('pbear.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes walking4 {
+        0% {top: -400px;}
+        100% {top: -1250px; visibility: hidden;}
+        }
+        #goldie {
+            position: relative;
+            height: 555px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: walking4 4.5s ease-in-out forwards;
+            animation-delay: 3.5s;
+            top: -400px;
+            left: 550px;
+            background-image: url('goldielocks.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes walking5 {
+        0% {left: 550px; visibility: visible;}
+        100% {left: 100px; visibility: hidden;}
+        }
+        #goldie2 {
+            position: relative;
+            height: 555px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: walking5 5.5s ease-in-out forwards;
+            animation-delay: 8s;
+            visibility: hidden;
+            top: -1800px;
+            left: 550px;
+            background-image: url('goldielocks.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
 
 /* 4th CSS Page */
         #nextbutton3 {
