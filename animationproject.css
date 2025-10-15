@@ -393,7 +393,147 @@ body {
 #backbutton3:hover {
     background-color: green;
 }
+        #table2 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(1);
+            top: 45vh;
+            left: 23vw;
+            background-image: url('table.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 
+        @keyframes slurping2 {
+            0% {left: 26vw; top: 14vh}
+            20% {left: -7vw; top: 30vh;}
+            30% {left: -7vw; top: 35vh;}
+            50% {left: -7vw; top: 30vh;}
+            70% {left: -7vw; top: 35vh;}
+            90% {left: -7vw; top: 30vh;}
+            100% {left: -30vw; top: 50vh;}
+        }
+
+        #soup4 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: slurping2 6.5s ease-in-out forwards;
+            animation-delay: 13.5s;
+            top: 14vh;
+            left: 26vw;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes slurping3 {
+            0% {left: 37vw; top: 17vh}
+            20% {left: -7vw; top: 30vh;}
+            30% {left: -7vw; top: 35vh;}
+            50% {left: -7vw; top: 30vh;}
+            70% {left: -7vw; top: 35vh;}
+            90% {left: -7vw; top: 30vh;}
+            100% {left: 15vw; top: 15vh;}
+        }
+
+        #soup5 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: slurping3 6.5s ease-in-out forwards;
+            animation-delay: 23.5s;
+            top: 17vh;
+            left: 37vw;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes slurping1 {
+            0% {left: 15vw; top: 15vh}
+            20% {left: -7vw; top: 30vh;}
+            30% {left: -7vw; top: 35vh;}
+            50% {left: -7vw; top: 30vh;}
+            70% {left: -7vw; top: 35vh;}
+            90% {left: -7vw; top: 30vh;}
+            100% {left: -30vw; top: 50vh;}
+        }
+
+        #soup6 {
+            position: relative;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: slurping1 6.5s ease-in-out forwards;
+            animation-delay: 3.5s;
+            top: 15vh;
+            left: 15vw;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes Movingleft {
+            0% {left: -30vw;}
+            100% {left: 0vw;}
+        }
+
+        #goldie3 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.9);
+            animation: Movingleft 3.5s ease-in-out forwards;
+            top: 29vh;
+            left: -30vw;
+            background-image: url('goldielocks.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes fadeinfire {
+            0% {top: 30vh; opacity: 0; visibility: visible;}
+            100% {top: -20vh; opacity: 1;}
+        }
+
+        #fire {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.7);
+            animation: fadeinfire 3.5s ease-in-out forwards;
+            animation-delay: 10s;
+            visibility: hidden;
+            top: 30vh;
+            left: -2vw;
+            background-image: url('fire.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes fadeinice {
+            0% {top: 30vh; opacity: 0; visibility: visible;}
+            100% {top: -20vh; opacity: 1;}
+        }
+
+        #snowflake {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: fadeinice 3.5s ease-in-out forwards;
+            animation-delay: 20s;
+            visibility: hidden;
+            top: 30vh;
+            left: -5vw;
+            background-image: url('snowflake.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 /* CSS Page 5 */
         #nextbutton4 {
             background-color: rgb(41, 218, 41);
