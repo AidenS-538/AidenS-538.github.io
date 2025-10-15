@@ -412,7 +412,7 @@ body {
             50% {left: -7vw; top: 30vh;}
             70% {left: -7vw; top: 35vh;}
             90% {left: -7vw; top: 30vh;}
-            100% {left: -30vw; top: 50vh;}
+            100% {left: 26vw; top: 14vh;}
         }
 
         #soup4 {
@@ -436,7 +436,7 @@ body {
             50% {left: -7vw; top: 30vh;}
             70% {left: -7vw; top: 35vh;}
             90% {left: -7vw; top: 30vh;}
-            100% {left: 15vw; top: 15vh;}
+            100% {left: 37vw; top: 17vh;}
         }
 
         #soup5 {
@@ -460,7 +460,7 @@ body {
             50% {left: -7vw; top: 30vh;}
             70% {left: -7vw; top: 35vh;}
             90% {left: -7vw; top: 30vh;}
-            100% {left: -30vw; top: 50vh;}
+            100% {left: 15vw; top: 15vh;}
         }
 
         #soup6 {
@@ -573,7 +573,70 @@ body {
 #backbutton4:hover {
     background-color: green;
 }
+        #greenbed {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.6);
+            top: 25vh;
+            left: 25vw;
+            background-image: url('greenbed.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        #pinkbed {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.6);
+            top: 35vh;
+            left: 43vw;
+            background-image: url('pinkbed.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 
+        #bluebed {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.45);
+            top: 45vh;
+            left: 55vw;
+            background-image: url('bluebed.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes checkingbeds {
+            0% {left: 1vw; top: 20vh; transform:rotate(0deg) scale(0.35);}
+            5% {left: 13vw; top: 30vh; transform:rotate(0deg) scale(0.35);}
+            10% {left: 13vw; top: 20vh; transform:rotate(0deg) scale(0.35);}
+            15% {left: 13vw; top: 30vh; transform:rotate(0deg) scale(0.35);}
+            20% {left: 13vw; top: 20vh; transform:rotate(0deg) scale(0.35);}
+            25% {left: 13vw; top: 30vh; transform:rotate(0deg) scale(0.35);}
+            30% {left: 35vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            35% {left: 35vw; top: 35vh; transform:rotate(0deg) scale(0.35);}
+            40% {left: 35vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            45% {left: 35vw; top: 35vh;transform:rotate(0deg) scale(0.35);}
+            50% {left: 35vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            60% {left: 50vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            100% {left: 55vw; top: 45vh; transform:rotate(90deg) scale(0.35);}
+            }
+
+        #goldie4 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            animation: checkingbeds 13s ease forwards;
+            transform: scale(0.35);
+            animation-delay: 2.5s;
+            top: 20vh;
+            left: 1vw;
+            background-image: url('goldielocks.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
 /* CSS Page 6 */
 
 #nextbutton5:hover {
@@ -582,8 +645,6 @@ body {
 #backbutton5:hover {
     background-color: green;
 }
-
-/* CSS Page 6 */
         #nextbutton5 {
             background-color: rgb(41, 218, 41);
             color: white;
@@ -616,7 +677,159 @@ body {
             left: 86%;
             text-decoration: none;
         }
+        #table3 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(1);
+            top: 55vh;
+            left: 45vw;
+            background-image: url('table.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
 
+        #soup7 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.3);
+            top: 24vh;
+            left: 40vw;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+        #soup8 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.3);
+            top: 22vh;
+            left: 52vw;
+            background-image: url('soupbowl.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        #soup9 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            top: 35vh;
+            left: 59vw;
+            background-image: url('emptybowl.png');
+            transform: rotate(65deg) scale(0.35);
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+        #brokenchair {
+            position: absolute;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.85);
+            top: 50vh;
+            left: 40vw;
+            background-image: url('brokenchair.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes entering1 {
+            0% {left: -30vw;}
+            100% {left: 15vw;}
+        }
+
+        #bbear3 {
+            position: absolute;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.5);
+            animation: entering1 2.5s ease-in-out forwards;
+            top: 50vh;
+            left: -30vw;
+            background-image: url('bbearsitting.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes entering2 {
+            0% {left: -30vw;}
+            100% {left: 10vw;}
+        }
+
+        #mbear3 {
+            position: absolute;
+            height: 525px;
+            width: 800px;
+            transform: scale(0.9);
+            animation: entering2 2.5s ease-in-out forwards;
+            animation-delay: 2.5s;
+            top: 37vh;
+            left: -30vw;
+            background-image: url('mbear.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes entering3 {
+            0% {left: -30vw;}
+            100% {left: -1vw;}
+        }
+
+        #pbear3 {
+            position: absolute;
+            height: 525px;
+            width: 800px;
+            transform: scale(1);
+            animation: entering3 2.5s ease-in-out forwards;
+            animation-delay: 5s;
+            top: 31vh;
+            left: -30vw;
+            background-image: url('pbear.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes fadeinexclamationpoint1 {
+            0% {top: 30vh; opacity: 0; visibility: visible;}
+            100% {top: -10vh; opacity: 1;}
+        }
+
+        #exm1 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.7);
+            animation: fadeinexclamationpoint1 3.5s ease-in-out forwards;
+            animation-delay: 7.5s;
+            visibility: hidden;
+            top: 30vh;
+            left: 15vw;
+            background-image: url('exclamationmark.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes fadeinexclamationpoint2 {
+            0% {top: 30vh; opacity: 0; visibility: visible;}
+            100% {top: -20vh; opacity: 1;}
+        }
+
+        #exm2 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.7);
+            animation: fadeinexclamationpoint2 3.5s ease-in-out forwards;
+            animation-delay: 7.5s;
+            visibility: hidden;
+            top: 30vh;
+            left: 0vw;
+            background-image: url('exclamationmark.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 /* CSS Page 7 */
         #nextbutton6 {
             background-color: rgb(41, 218, 41);
