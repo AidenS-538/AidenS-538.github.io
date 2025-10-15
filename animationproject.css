@@ -203,6 +203,21 @@ body {
 #backbutton:hover {
     background-color: green;
 }
+
+        #textbox1 {
+            width: 50vw;
+            height: 10vw;
+            float: left;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            shape-outside: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+            transform: translateY(-230vh);
+        }
+
+        #text1 {
+            font-size: 1.5rem;
+            color: gold;
+            transform: translateY(-230vh) translateX(-39vw);
+        }
 /* 3rd CSS Page */
         #nextbutton2 {
             background-color: rgb(41, 218, 41);
