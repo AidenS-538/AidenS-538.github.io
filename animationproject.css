@@ -1,14 +1,7 @@
 body {
     overflow: hidden;
 }
-
 /* 1st Page CSS */
-.cedarville-cursive-regular {
-  font-family: "Cedarville Cursive", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 #button {
     background-color: rgb(41, 218, 41);
     color: white;
@@ -29,7 +22,6 @@ body {
 #button:hover {
     background-color: green;
 }
-
     @keyframes moveDown {
         0%   { top: -250px; }
         100% { top: 50px; }
@@ -51,15 +43,6 @@ body {
         }
         #title:first-letter {
         font-size: 5rem;
-        }
-
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index: 1;
         }
 /* 2nd Page CSS */
         #nextbutton {
@@ -869,12 +852,217 @@ body {
 #backbutton6:hover {
     background-color: green;
 }
+        #greenbed2 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.6);
+            top: 25vh;
+            left: 25vw;
+            background-image: url('greenbed.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        #pinkbed2 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.6);
+            top: 35vh;
+            left: 43vw;
+            background-image: url('pinkbed.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 
+        #bluebed2 {
+            position: absolute;
+            height: 500px;
+            width: 800px;
+            transform: scale(0.45);
+            top: 45vh;
+            left: 55vw;
+            background-image: url('bluebed.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes flee { 
+            0% {top: 45vh; left: 55vw; transform: rotate(90deg) scale(0.35);}
+            50% {top: 30vh; left: 55vw; transform: rotate(0deg) scale(0.35);}
+            75% {top: -3vh; left: 60vw; transform: rotate(0deg) scale(0.35);}
+            100% {top: -3vh; left: 55vw; transform: rotate(0deg) scale(0.35); visibility: hidden;}
+
+
+        }
+        #goldie5 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: rotate(90deg) scale(0.35);
+            animation: flee 3.5s ease-in-out forwards;
+            animation-delay: 17.5s;
+            top: 45vh;
+            left: 55vw;
+            background-image: url('goldielocks.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes inspect1 { 
+            0% {top: 10vh; left: 13vw; visibility: visible;}
+            100% {top: 15vh; left: 19vw; visibility: visible;}
+        }
+        #pbear4 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.85);
+            animation: inspect1 3.5s ease-in-out forwards;
+            animation-delay: 3s;
+            visibility: hidden;
+            top: 10vh;
+            left: 13vw;
+            background-image: url('pbear.png');
+            background-repeat: no-repeat;
+            z-index: 4;
+        }
+
+        @keyframes inspect2 { 
+            0% {top: 10vh; left: 13vw; visibility: visible;}
+            100% {top: 37vh; left: 40vw; visibility: visible;}
+        }
+        #mbear4 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.8);
+            animation: inspect2 3.5s ease-in-out forwards;
+            animation-delay: 6.5s;
+            visibility: hidden;
+            top: 45vh;
+            left: 35vw;
+            background-image: url('mbear.png');
+            background-repeat: no-repeat;
+            z-index: 3;
+        }
+
+        @keyframes inspect3 { 
+            0% {top: 35vh; left: 13vw; visibility: visible;}
+            100% {top: 50vh; left: 50vw; visibility: visible;}
+        }
+        #bbear4 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.3);
+            animation: inspect3 3.5s ease-in-out forwards;
+            animation-delay: 10s;
+            visibility: hidden;
+            top: 10vh;
+            left: 13vw;
+            background-image: url('bbearsitting.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        @keyframes fadeinexclamationpoint3 {
+            0% {top: 50vh; opacity: 0; visibility: visible;}
+            100% {top: 30vh; opacity: 1;}
+        }
+
+        #exm3 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.35);
+            animation: fadeinexclamationpoint3 1.5s ease-in-out forwards;
+            animation-delay: 13.5s;
+            visibility: hidden;
+            top: 50vh;
+            left: 50vw;
+            background-image: url('exclamationmark.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+
+        @keyframes fadeinexclamationpoint4 {
+            0% {top: 30vh; opacity: 0; visibility: visible;}
+            100% {top: 5vh; opacity: 1;}
+        }
+
+        #exm4 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            transform: scale(0.35);
+            animation: fadeinexclamationpoint4 1s ease-in-out forwards;
+            animation-delay: 18.5s;
+            visibility: hidden;
+            top: 30vh;
+            left: 55vw;
+            background-image: url('exclamationmark.png');
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 /* CSS Page 8 */
-
+        #backtostart {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 92.5%;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        #backbutton7 {
+            background-color: rgb(41, 218, 41);
+            color: white;
+            width: 80px;
+            height: 30px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            padding-top: 10px;
+            position: absolute;
+            border-radius: 15px;
+            top: 3.5%;
+            left: 86%;
+            text-decoration: none;
+        }
 #backtostart:hover {
     background-color: green;
 }
 #backbutton7:hover {
     background-color: green;
 }
+    @keyframes moveup {
+        0%   { top: 100vh; }
+        100% { top: 60vh; }
+    }     
+        #end {
+        position: absolute;
+        animation: moveup 3.5s ease-in-out forwards;
+        top: 100vh;
+        left: 37.50%;
+        width: 800px;
+        height: 25px;
+        color: gold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 80px;
+        text-decoration: underline;
+        text-align: center;
+        z-index: 2;
+        }
+        #end:first-letter {
+        font-size: 7rem;
+        }
