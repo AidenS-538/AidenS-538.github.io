@@ -47,6 +47,36 @@
             background-repeat: no-repeat;
             z-index: 1;
         }
+
+        @keyframes checkingbeds {
+            0% {left: 1vw; top: 20vh; transform:rotate(0deg) scale(0.35);}
+            5% {left: 13vw; top: 30vh; transform:rotate(0deg) scale(0.35);}
+            10% {left: 13vw; top: 20vh; transform:rotate(0deg) scale(0.35);}
+            15% {left: 13vw; top: 30vh; transform:rotate(0deg) scale(0.35);}
+            20% {left: 13vw; top: 20vh; transform:rotate(0deg) scale(0.35);}
+            25% {left: 13vw; top: 30vh; transform:rotate(0deg) scale(0.35);}
+            30% {left: 35vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            35% {left: 35vw; top: 35vh; transform:rotate(0deg) scale(0.35);}
+            40% {left: 35vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            45% {left: 35vw; top: 35vh;transform:rotate(0deg) scale(0.35);}
+            50% {left: 35vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            60% {left: 50vw; top: 45vh; transform:rotate(0deg) scale(0.35);}
+            100% {left: 55vw; top: 45vh; transform:rotate(90deg) scale(0.35);}
+            }
+
+        #goldie4 {
+            position: absolute;
+            height: 545px;
+            width: 800px;
+            animation: checkingbeds 13s ease forwards;
+            transform: scale(0.35);
+            animation-delay: 2.5s;
+            top: 20vh;
+            left: 1vw;
+            background-image: url('goldielocks.png');
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
     </style>
 <body>
     <a id="nextbutton4" href="storypg6.html">Next</a>
@@ -54,5 +84,6 @@
     <div id="greenbed"></div>
     <div id="pinkbed"></div>
     <div id="bluebed"></div>
+    <div id="goldie4"></div>
 </body>
 </html>
