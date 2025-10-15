@@ -1,6 +1,7 @@
 body {
     overflow: hidden;
 }
+
 /* 1st Page CSS */
 #button {
     background-color: rgb(41, 218, 41);
@@ -266,7 +267,7 @@ body {
         100% {left: -1400px;}
         }
         #bbear2 {
-            position: relative;
+            position: absolute;
             height: 525px;
             width: 800px;
             transform: scale(0.2);
@@ -283,13 +284,13 @@ body {
         100% {left: -1400px;}
         }
         #mbear2 {
-            position: relative;
+            position: absolute;
             height: 525px;
             width: 800px;
             transform: scale(0.5);
             animation: walking2 5.5s ease-in forwards;
             animation-delay: 0.5s;
-            top: -170px;
+            top: 50vh;
             left: 310px;
             background-image: url('mbear.png');
             background-repeat: no-repeat;
@@ -302,13 +303,13 @@ body {
         }
 
         #pbear2 {
-            position: relative;
+            position: absolute;
             height: 525px;
             width: 400px;
             transform: scale(0.6);
             animation: walking3 5.5s ease-in forwards;
             animation-delay: 0.5s;
-            top: -730px;
+            top: 45vh;
             left: 810px;
             background-image: url('pbear.png');
             background-repeat: no-repeat;
@@ -316,17 +317,17 @@ body {
         }
 
         @keyframes walking4 {
-        0% {top: -400px;}
-        100% {top: -1250px; visibility: hidden;}
+        0% {top: 400px;}
+        100% {top: 50vh; visibility: hidden;}
         }
         #goldie {
-            position: relative;
+            position: absolute;
             height: 555px;
             width: 800px;
             transform: scale(0.3);
             animation: walking4 4.5s ease-in-out forwards;
-            animation-delay: 3.5s;
-            top: -400px;
+            animation-delay: 6.5s;
+            top: 700px;
             left: 550px;
             background-image: url('goldielocks.png');
             background-repeat: no-repeat;
@@ -343,13 +344,28 @@ body {
             width: 800px;
             transform: scale(0.3);
             animation: walking5 5.5s ease-in-out forwards;
-            animation-delay: 8s;
+            animation-delay: 11s;
             visibility: hidden;
-            top: -1800px;
+            top: 50vh;
             left: 550px;
             background-image: url('goldielocks.png');
             background-repeat: no-repeat;
             z-index: 2;
+        }
+        #textbox2 {
+            width: 25vw;
+            height: 25vw;
+            float: left;
+            clip-path: polygon(0 42%, 0% 100%, 100% 100%);
+            shape-outside: polygon(0 42%, 0% 100%, 100% 100%);
+            transform:translateY(-77vh);
+        }
+
+        #text2 {
+            font-size: 1.2rem;
+            color: gold;
+            width: 75vw;
+            transform:translateY(-77vh);
         }
 
 /* 4th CSS Page */
