@@ -2,6 +2,46 @@ body {
     overflow: hidden;
 }
 
+#body1 {
+    background-image: url('cabininforest.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#body2 {
+    background-image: url('cabininterior.png');
+    background-size: 112%;
+    background-repeat: no-repeat;
+}
+#body3 {
+    background-image: url('cabininforest.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#body4 {
+    background-image: url('cabininterior.png');
+    background-size: 112%;
+    background-repeat: no-repeat;
+}
+#body5 {
+    background-image: url('cabininterior2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#body6 {
+    background-image: url('cabininterior.png');
+    background-size: 112%;
+    background-repeat: no-repeat;
+}
+#body7 {
+    background-image: url('cabininterior2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#body8 {
+    background-image: url('cabininforest.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* 1st Page CSS */
 #button {
     background-color: rgb(41, 218, 41);
