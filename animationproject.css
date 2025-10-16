@@ -198,6 +198,7 @@ body {
             z-index: 2;
         }
 
+
 #nextbutton:hover {
     background-color: green;
 }
@@ -206,18 +207,37 @@ body {
 }
 
         #textbox1 {
+            position: absolute;
             width: 50vw;
             height: 10vw;
             float: left;
+            left: -30vw;
             clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
             shape-outside: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
             transform: translateY(-230vh);
+            z-index: 2;
         }
 
         #text1 {
+            position: absolute;
             font-size: 1.5rem;
+            height: 10vh;
+            width: 38vw;
+            left: 50vw;
             color: gold;
             transform: translateY(-230vh) translateX(-39vw);
+            z-index: 2;
+        }
+        #woodenplank {
+            position: absolute;
+            width: 890px;
+            height: 400px;
+            top: -8vh;
+            left: 0vw;
+            background-image: url('woodensign.png');
+            transform: scale(.8);
+            background-repeat: no-repeat;
+            z-index: 0;
         }
 /* 3rd CSS Page */
         #nextbutton2 {
@@ -353,21 +373,38 @@ body {
             z-index: 2;
         }
         #textbox2 {
+            position: absolute;
             width: 25vw;
             height: 25vw;
             float: left;
             clip-path: polygon(0 42%, 0% 100%, 100% 100%);
             shape-outside: polygon(0 42%, 0% 100%, 100% 100%);
             transform:translateY(-77vh);
+            z-index: 2;
         }
 
         #text2 {
-            font-size: 1.2rem;
+            position: absolute;
+            font-size: 1rem;
+            height: 25vh;
+            width: 20vw;
             color: gold;
-            width: 75vw;
-            transform:translateY(-77vh);
+            width: 40vw;
+            height: 20vh;
+            transform:translateY(-75vh) translateX(9vw);
+            z-index: 2;
         }
-
+        #woodenplank2 {
+            position: absolute;
+            width: 890px;
+            height: 400px;
+            top: -5vh;
+            left: 0vw;
+            background-image: url('woodensign.png');
+            transform: scale(.9);
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
 /* 4th CSS Page */
         #nextbutton3 {
             background-color: rgb(41, 218, 41);
@@ -548,6 +585,26 @@ body {
             background-repeat: no-repeat;
             z-index: 1;
         }
+        #textbox3 {
+            width: 25vw;
+            height: 25vw;
+            float: left;
+            transform: translate(50px, -520px);
+            background-image: url("circleplank.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            clip-path: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+        }
+
+        #text3 {
+            font-size: 2rem;
+            width: 70vw;
+            height: 30vh;
+            color: gold;
+            transform: translate(50px, -520px);
+        }
 /* CSS Page 5 */
         #nextbutton4 {
             background-color: rgb(41, 218, 41);
@@ -649,6 +706,25 @@ body {
             left: 1vw;
             background-image: url('goldielocks.png');
             background-repeat: no-repeat;
+            z-index: 2;
+        }
+
+        #textbox4 {
+            width: 25vw;
+            height: 12vw;
+            float: left;
+            transform: translate(130px, 0px);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            shape-outside: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            
+        }
+
+        #text4 {
+            font-size: 1.3rem;
+            width: 60vw;
+            height: 30vh;
+            color: brown;
+            transform: translate(130px, 0px);
             z-index: 2;
         }
 /* CSS Page 6 */
@@ -844,6 +920,27 @@ body {
             background-repeat: no-repeat;
             z-index: 1;
         }
+        #text6 {
+            position: absolute;
+            font-size: 1.1rem;
+            height: 10vh;
+            width: 38vw;
+            left: 50vw;
+            color: brown;
+            transform: translateY(-1vh) translateX(-39vw);
+            z-index: 2;
+        }
+        #woodenplank4 {
+            position: absolute;
+            width: 890px;
+            height: 400px;
+            top: -8vh;
+            left: 0vw;
+            background-image: url('woodensign.png');
+            transform: scale(.8);
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
 /* CSS Page 7 */
         #nextbutton6 {
             background-color: rgb(41, 218, 41);
@@ -1036,6 +1133,27 @@ body {
             background-repeat: no-repeat;
             z-index: 1;
         }
+        #text7 {
+            position: absolute;
+            font-size: 0.71rem;
+            height: 10vh;
+            width: 35vw;
+            left: 72vw;
+            color: brown;
+            transform: translateY(-1vh) translateX(-39vw);
+            z-index: 2;
+        }
+        #woodenplank5 {
+            position: absolute;
+            width: 890px;
+            height: 400px;
+            top: -10vh;
+            left: 21vw;
+            background-image: url('woodensign.png');
+            transform: scale(.7);
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
 /* CSS Page 8 */
         #backtostart {
             background-color: rgb(41, 218, 41);
@@ -1096,4 +1214,26 @@ body {
         }
         #end:first-letter {
         font-size: 7rem;
+        }
+        #text8 {
+            position: absolute;
+            font-size: 1.3rem;
+            height: 10vh;
+            width: 35vw;
+            left: 86vw;
+            top: 10vh;
+            color: brown;
+            transform: translateY(-1vh) translateX(-39vw);
+            z-index: 2;
+        }
+        #woodenplank6 {
+            position: absolute;
+            width: 890px;
+            height: 400px;
+            top: 0vh;
+            left: 35vw;
+            background-image: url('woodensign.png');
+            transform: scale(.7);
+            background-repeat: no-repeat;
+            z-index: 0;
         }
