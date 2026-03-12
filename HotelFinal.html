@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Guest Check in</title>
+    <script src="hotel.js"></script>
+    <link rel="stylesheet" href="hotel.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        ul { margin-top: 10px; }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-size: 20px;
+      color: #00796b;
+      font-weight: 500;
+      font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <img src="HotelLogo.png" alt="Paradise Stay Hotel Logo" class="logo">
+    <div class="tagline">Your tropical escape awaits</div>
+  </div>
+    <h2>Paradise Stay Hotel</h2>
+    
+    <!-- <input type="text" id="GetGuest1" placeholder="Who is Checking In...">
+    <button id="Guestbtn1">Add 1 Guest</button>
+    <button id="ReGuestbtn1">Remove 1 Guest</button>
+    <button id="ReallGuestsbtn1">Remove All Guests</button>
+    <button id="LockGRbtn1">Lock Room</button>
+    <button id="ClearLogbtn">Clear History Log</button>
+    
+    <input type="text" id="GetGuest2" placeholder="Who is Checking In...">
+    <button id="Guestbtn2">Add 1 Guest</button>
+    <button id="ReGuestbtn2">Remove 1 Guest</button>
+    <button id="ReallGuestsbtn2">Remove All Guests</button>
+    <button id="LockGRbtn2">Lock Room</button>
+
+    <input type="text" id="GetGuest3" placeholder="Who is Checking In...">
+    <button id="Guestbtn3">Add 1 Guest</button>
+    <button id="ReGuestbtn3">Remove 1 Guest</button>
+    <button id="ReallGuestsbtn3">Remove All Guests</button>
+    <button id="LockGRbtn3">Lock Room</button>
+
+    <input type="text" id="GetGuest4" placeholder="Who is Checking In...">
+    <button id="Guestbtn4">Add 1 Guest</button>
+    <button id="ReGuestbtn4">Remove 1 Guest</button>
+    <button id="ReallGuestsbtn4">Remove All Guests</button>
+    <button id="LockGRbtn4">Lock Room</button>
+
+    <input type="text" id="GetGuest5" placeholder="Who is Checking In...">
+    <button id="Guestbtn5">Add 1 Guest</button>
+    <button id="ReGuestbtn5">Remove 1 Guest</button>
+    <button id="ReallGuestsbtn5">Remove All Guests</button>
+    <button id="LockGRbtn5">Lock Room</button>
+
+    <input type="text" id="GetGuest6" placeholder="Who is Checking In...">
+    <button id="Guestbtn6">Add 1 Guest</button>
+    <button id="ReGuestbtn6">Remove 1 Guest</button>
+    <button id="ReallGuestsbtn6">Remove All Guests</button>
+    <button id="LockGRbtn6">Lock Room</button>
+    */ -->
+
+    <!-- <ul id="GuestList1"></ul>
+    <ul id="GuestList2"></ul>
+    <ul id="GuestList3"></ul>
+    <ul id="GuestList4"></ul>
+    <ul id="GuestList5"></ul>
+    <ul id="GuestList6"></ul>
+
+    <h3>Guest History</h3>
+    <ul id="LogList"></ul> -->
+
+
+<h2>Hotel Guest Check-In</h2>
+
+<div class="room-container">
+
+<div class="room">
+<h3>Room 1</h3>
+
+<input type="text" id="GetGuest1" placeholder="Guest name">
+
+<div class="buttons">
+<button id="Guestbtn1">Add Guest</button>
+<button id="ReGuestbtn1">Remove Guest</button>
+<button id="ReallGuestsbtn1">Remove All</button>
+<button id="LockGRbtn1">Lock Room</button>
+</div>
+
+<ol id="GuestList1"></ol>
+</div>
+
+<div class="room">
+<h3>Room 2</h3>
+
+<input type="text" id="GetGuest2" placeholder="Guest name">
+
+<div class="buttons">
+<button id="Guestbtn2">Add Guest</button>
+<button id="ReGuestbtn2">Remove Guest</button>
+<button id="ReallGuestsbtn2">Remove All</button>
+<button id="LockGRbtn2">Lock Room</button>
+</div>
+
+<ol id="GuestList2"></ol>
+</div>
+
+<div class="room">
+<h3>Room 3</h3>
+
+<input type="text" id="GetGuest3" placeholder="Guest name">
+
+<div class="buttons">
+<button id="Guestbtn3">Add Guest</button>
+<button id="ReGuestbtn3">Remove Guest</button>
+<button id="ReallGuestsbtn3">Remove All</button>
+<button id="LockGRbtn3">Lock Room</button>
+</div>
+
+<ol id="GuestList3"></ol>
+</div>
+
+
+<div class="room">
+<h3>Room 4</h3>
+
+<input type="text" id="GetGuest4" placeholder="Guest name">
+
+<div class="buttons">
+<button id="Guestbtn4">Add Guest</button>
+<button id="ReGuestbtn4">Remove Guest</button>
+<button id="ReallGuestsbtn4">Remove All</button>
+<button id="LockGRbtn4">Lock Room</button>
+</div>
+
+<ol id="GuestList4"></ol>
+</div>
+
+
+
+<div class="room">
+<h3>Room 5</h3>
+
+<input type="text" id="GetGuest5" placeholder="Guest name">
+
+<div class="buttons">
+<button id="Guestbtn5">Add Guest</button>
+<button id="ReGuestbtn5">Remove Guest</button>
+<button id="ReallGuestsbtn5">Remove All</button>
+<button id="LockGRbtn5">Lock Room</button>
+</div>
+
+<ol id="GuestList5"></ol>
+</div>
+
+
+
+<div class="room">
+<h3>Room 6</h3>
+
+<input type="text" id="GetGuest6" placeholder="Guest name">
+
+<div class="buttons">
+<button id="Guestbtn6">Add Guest</button>
+<button id="ReGuestbtn6">Remove Guest</button>
+<button id="ReallGuestsbtn6">Remove All</button>
+<button id="LockGRbtn6">Lock Room</button>
+</div>
+
+<ol id="GuestList6"></ol>
+</div>
+
+</div>
+
+<div class="history">
+
+<div class="history-header">
+<h3>Guest History</h3>
+<button id="ClearLogbtn">Clear History</button>
+</div>
+
+<ol id="LogList"></ol>
+
+</div>
+
+
+<script>
+const maxItems = 5;
+// Get references to DOM elements
+const Guestbtn1 = document.getElementById('Guestbtn1');
+const GetGuest1 = document.getElementById('GetGuest1');
+const Guestlist1 = document.getElementById('GuestList1');
+const ReGuestbtn1 = document.getElementById('ReGuestbtn1');
+const ReallGuestsbtn1 = document.getElementById('ReallGuestsbtn1');
+const LockGRbtn1 = document.getElementById('LockGRbtn1');
+const ClearLogbtn = document.getElementById('ClearLogbtn');
+
+const Guestbtn2 = document.getElementById('Guestbtn2');
+const GetGuest2 = document.getElementById('GetGuest2');
+const Guestlist2 = document.getElementById('GuestList2');
+const ReGuestbtn2 = document.getElementById('ReGuestbtn2');
+const ReallGuestsbtn2 = document.getElementById('ReallGuestsbtn2');
+const LockGRbtn2 = document.getElementById('LockGRbtn2');
+
+const Guestbtn3 = document.getElementById('Guestbtn3');
+const GetGuest3 = document.getElementById('GetGuest3');
+const Guestlist3 = document.getElementById('GuestList3');
+const ReGuestbtn3 = document.getElementById('ReGuestbtn3');
+const ReallGuestsbtn3 = document.getElementById('ReallGuestsbtn3');
+const LockGRbtn3 = document.getElementById('LockGRbtn3');
+
+const Guestbtn4 = document.getElementById('Guestbtn4');
+const GetGuest4 = document.getElementById('GetGuest4');
+const Guestlist4 = document.getElementById('GuestList4');
+const ReGuestbtn4 = document.getElementById('ReGuestbtn4');
+const ReallGuestsbtn4 = document.getElementById('ReallGuestsbtn4');
+const LockGRbtn4 = document.getElementById('LockGRbtn4');
+
+const Guestbtn5 = document.getElementById('Guestbtn5');
+const GetGuest5 = document.getElementById('GetGuest5');
+const Guestlist5 = document.getElementById('GuestList5');
+const ReGuestbtn5 = document.getElementById('ReGuestbtn5');
+const ReallGuestsbtn5 = document.getElementById('ReallGuestsbtn5');
+const LockGRbtn5 = document.getElementById('LockGRbtn5');
+
+const Guestbtn6 = document.getElementById('Guestbtn6');
+const GetGuest6 = document.getElementById('GetGuest6');
+const Guestlist6 = document.getElementById('GuestList6');
+const ReGuestbtn6 = document.getElementById('ReGuestbtn6');
+const ReallGuestsbtn6 = document.getElementById('ReallGuestsbtn6');
+const LockGRbtn6 = document.getElementById('LockGRbtn6');
+
+let isLocked = false;
+let isLocked2 = false;
+let isLocked3 = false;
+let isLocked4 = false;
+let isLocked5 = false;
+let isLocked6 = false;
+
+// Add click event listener to the button
+Guestbtn1.addEventListener('click', function() {
+    const newItemText = GetGuest1.value.trim();
+
+    if (isLocked) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    // Validate input
+    if (newItemText === '') {
+        alert('Please enter an Guest Name.');
+        return;
+    }
+
+    // If list is over 5
+    if (Guestlist1.children.length >= 5) {
+        alert('Only 5 guests can be checked in.');
+        return;
+    }
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.textContent = newItemText;
+
+    // Append the new item to the list
+    Guestlist1.appendChild(li);
+
+    addLog(`Added guest to room 1: ${newItemText}`);
+
+    // Clear the input field
+    GetGuest1.value = '';
+    GetGuest1.focus();
+});
+GetGuest1.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        Guestbtn1.click(); // simulate button press
+    }
+});
+ReGuestbtn1.addEventListener('click', function() {
+    const removeText = GetGuest1.value.trim();
+
+    if (isLocked) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (removeText === '') {
+        alert('Please enter a Guest to Remove.');
+        return;
+    }
+
+    if (Guestlist1.children.length === 0) {
+        alert('No Guests have checked into the room.');
+        return;
+    }
+
+    let found = false;
+
+    for (let li of Guestlist1.children) {
+        if (li.textContent.toLowerCase() === removeText.toLowerCase()) {
+            Guestlist1.removeChild(li);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert('Guest not found in the list.');
+    }
+
+    addLog(`Removed guest from room 1: ${removeText}`);
+
+    GetGuest1.value = '';
+    GetGuest1.focus();
+});
+ReallGuestsbtn1.addEventListener('click', function() {
+    const removeText = GetGuest1.value.trim();
+
+    if (isLocked) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (Guestlist1.children.length === 0) {
+        alert('No Guests are checked into this room.');
+        return;
+    }
+
+    Guestlist1.innerHTML = ''
+
+    addLog(`Removed All Guests from Room 1`);
+
+    GetGuest1.value = '';
+    GetGuest1.focus();
+});
+LockGRbtn1.addEventListener('click', function() {
+    isLocked = !isLocked; // toggle true/false
+    
+
+    if (isLocked) {
+        LockGRbtn1.textContent = "Unlock Room";
+        alert("Room 1 is now locked. No more changes allowed.");
+        addLog("Room 1 has been Locked.");
+    } else {
+        LockGRbtn1.textContent = "Lock Room";
+        alert("Room 1 is now unlocked. You may edit the guest list.");
+        addLog("Room 1 has been unlocked.")
+    }
+});
+
+
+
+Guestbtn2.addEventListener('click', function() {
+    const newItemText = GetGuest2.value.trim();
+
+    if (isLocked2) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    // Validate input
+    if (newItemText === '') {
+        alert('Please enter an Guest Name.');
+        return;
+    }
+
+    // If list is over 5
+    if (Guestlist2.children.length >= 5) {
+        alert('Only 5 guests can be checked in.');
+        return;
+    }
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.textContent = newItemText;
+
+    // Append the new item to the list
+    Guestlist2.appendChild(li);
+
+    addLog(`Added guest to room 2: ${newItemText}`);
+
+    // Clear the input field
+    GetGuest2.value = '';
+    GetGuest2.focus();
+});
+GetGuest2.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        Guestbtn2.click(); // simulate button press
+    }
+});
+ReGuestbtn2.addEventListener('click', function() {
+    const removeText = GetGuest2.value.trim();
+
+    if (isLocked2) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (removeText === '') {
+        alert('Please enter a Guest to Remove.');
+        return;
+    }
+
+    if (Guestlist2.children.length === 0) {
+        alert('No Guests have checked into the room.');
+        return;
+    }
+
+    let found = false;
+
+    for (let li of Guestlist2.children) {
+        if (li.textContent.toLowerCase() === removeText.toLowerCase()) {
+            Guestlist2.removeChild(li);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert('Guest not found in the list.');
+    }
+
+    addLog(`Removed guest from room 2: ${removeText}`);
+
+    GetGuest2.value = '';
+    GetGuest2.focus();
+});
+ReallGuestsbtn2.addEventListener('click', function() {
+    const removeText = GetGuest2.value.trim();
+
+    if (isLocked2) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (Guestlist2.children.length === 0) {
+        alert('No Guests are checked into this room.');
+        return;
+    }
+
+    Guestlist2.innerHTML = ''
+
+    addLog(`Removed All Guests from Room 2`);
+
+    GetGuest2.value = '';
+    GetGuest2.focus();
+});
+LockGRbtn2.addEventListener('click', function() {
+    isLocked2 = !isLocked2; // toggle true/false
+    
+
+    if (isLocked2) {
+        LockGRbtn2.textContent = "Unlock Room";
+        alert("Room 2 is now locked. No more changes allowed.");
+        addLog("Room 2 has been Locked.");
+    } else {
+        LockGRbtn2.textContent = "Lock Room";
+        alert("Room 2 is now unlocked. You may edit the guest list.");
+        addLog("Room 2 has been unlocked.")
+    }
+});
+
+
+Guestbtn3.addEventListener('click', function() {
+    const newItemText = GetGuest3.value.trim();
+
+    if (isLocked3) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    // Validate input
+    if (newItemText === '') {
+        alert('Please enter an Guest Name.');
+        return;
+    }
+
+    // If list is over 5
+    if (Guestlist3.children.length >= 5) {
+        alert('Only 5 guests can be checked in.');
+        return;
+    }
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.textContent = newItemText;
+
+    // Append the new item to the list
+    Guestlist3.appendChild(li);
+
+    addLog(`Added guest to room 3: ${newItemText}`);
+
+    // Clear the input field
+    GetGuest3.value = '';
+    GetGuest3.focus();
+});
+GetGuest3.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        Guestbtn3.click(); // simulate button press
+    }
+});
+ReGuestbtn3.addEventListener('click', function() {
+    const removeText = GetGuest3.value.trim();
+
+    if (isLocked3) {
+        alert("Room 3 is locked. No more changes allowed.");
+        return;
+    }
+
+    if (removeText === '') {
+        alert('Please enter a Guest to Remove.');
+        return;
+    }
+
+    if (Guestlist3.children.length === 0) {
+        alert('No Guests have checked into room 3.');
+        return;
+    }
+
+    let found = false;
+
+    for (let li of Guestlist3.children) {
+        if (li.textContent.toLowerCase() === removeText.toLowerCase()) {
+            Guestlist3.removeChild(li);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert('Guest not found in the list.');
+    }
+
+    addLog(`Removed guest from room 3: ${removeText}`);
+
+    GetGuest3.value = '';
+    GetGuest3.focus();
+});
+ReallGuestsbtn3.addEventListener('click', function() {
+    const removeText = GetGuest3.value.trim();
+
+    if (isLocked) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (Guestlist3.children.length === 0) {
+        alert('No Guests are checked into this room.');
+        return;
+    }
+
+    Guestlist3.innerHTML = ''
+
+    addLog(`Removed All Guests from Room 3`);
+
+    GetGuest3.value = '';
+    GetGuest3.focus();
+});
+LockGRbtn3.addEventListener('click', function() {
+    isLocked3 = !isLocked3; // toggle true/false
+    
+
+    if (isLocked3) {
+        LockGRbtn3.textContent = "Unlock Room";
+        alert("Room 3 is now locked. No more changes allowed.");
+        addLog("Room 3 has been Locked.");
+    } else {
+        LockGRbtn3.textContent = "Lock Room";
+        alert("Room 3 is now unlocked. You may edit the guest list.");
+        addLog("Room 3 has been unlocked.")
+    }
+});
+
+
+Guestbtn4.addEventListener('click', function() {
+    const newItemText = GetGuest4.value.trim();
+
+    if (isLocked4) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    // Validate input
+    if (newItemText === '') {
+        alert('Please enter an Guest Name.');
+        return;
+    }
+
+    // If list is over 5
+    if (Guestlist4.children.length >= 5) {
+        alert('Only 5 guests can be checked in.');
+        return;
+    }
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.textContent = newItemText;
+
+    // Append the new item to the list
+    Guestlist4.appendChild(li);
+
+    addLog(`Added guest to room 4: ${newItemText}`);
+
+    // Clear the input field
+    GetGuest4.value = '';
+    GetGuest4.focus();
+});
+GetGuest4.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        Guestbtn4.click(); // simulate button press
+    }
+});
+ReGuestbtn4.addEventListener('click', function() {
+    const removeText = GetGuest4.value.trim();
+
+    if (isLocked4) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (removeText === '') {
+        alert('Please enter a Guest to Remove.');
+        return;
+    }
+
+    if (Guestlist4.children.length === 0) {
+        alert('No Guests have checked into the room.');
+        return;
+    }
+
+    let found = false;
+
+    for (let li of Guestlist4.children) {
+        if (li.textContent.toLowerCase() === removeText.toLowerCase()) {
+            Guestlist4.removeChild(li);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert('Guest not found in the list.');
+    }
+
+    addLog(`Removed guest from room 4: ${removeText}`);
+
+    GetGuest4.value = '';
+    GetGuest4.focus();
+});
+ReallGuestsbtn4.addEventListener('click', function() {
+    const removeText = GetGuest4.value.trim();
+
+    if (isLocked4) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (Guestlist4.children.length === 0) {
+        alert('No Guests are checked into this room.');
+        return;
+    }
+
+    Guestlist4.innerHTML = ''
+
+    addLog(`Removed All Guests from Room 4`);
+
+    GetGuest4.value = '';
+    GetGuest4.focus();
+});
+LockGRbtn4.addEventListener('click', function() {
+    isLocked4 = !isLocked4; // toggle true/false
+    
+
+    if (isLocked4) {
+        LockGRbtn4.textContent = "Unlock Room";
+        alert("Room 4 is now locked. No more changes allowed.");
+        addLog("Room 4 has been Locked.");
+    } else {
+        LockGRbtn4.textContent = "Lock Room";
+        alert("Room 4 is now unlocked. You may edit the guest list.");
+        addLog("Room 4 has been unlocked.")
+    }
+});
+
+
+Guestbtn5.addEventListener('click', function() {
+    const newItemText = GetGuest5.value.trim();
+
+    if (isLocked5) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    // Validate input
+    if (newItemText === '') {
+        alert('Please enter an Guest Name.');
+        return;
+    }
+
+    // if list is over 5
+    if (Guestlist5.children.length >= 5) {
+        alert('Only 5 guests can be checked in.');
+        return;
+    }
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.textContent = newItemText;
+
+    // Append the new item to the list
+    Guestlist5.appendChild(li);
+
+    addLog(`Added guest to room 5: ${newItemText}`);
+
+    // clear the input field
+    GetGuest5.value = '';
+    GetGuest5.focus();
+});
+GetGuest5.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        Guestbtn5.click(); // simulate button press
+    }
+});
+ReGuestbtn5.addEventListener('click', function() {
+    const removeText = GetGuest5.value.trim();
+
+    if (isLocked5) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (removeText === '') {
+        alert('Please enter a Guest to Remove.');
+        return;
+    }
+
+    if (Guestlist5.children.length === 0) {
+        alert('No Guests have checked into the room.');
+        return;
+    }
+
+    let found = false;
+
+    for (let li of Guestlist5.children) {
+        if (li.textContent.toLowerCase() === removeText.toLowerCase()) {
+            Guestlist5.removeChild(li);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert('Guest not found in the list.');
+    }
+
+    addLog(`Removed guest from room 5: ${removeText}`);
+
+    GetGuest5.value = '';
+    GetGuest5.focus();
+});
+ReallGuestsbtn5.addEventListener('click', function() {
+    const removeText = GetGuest5.value.trim();
+
+    if (isLocked5) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (Guestlist5.children.length === 0) {
+        alert('No Guests are checked into this room.');
+        return;
+    }
+
+    Guestlist5.innerHTML = ''
+
+    addLog(`Removed All Guests from Room 5`);
+
+    GetGuest5.value = '';
+    GetGuest5.focus();
+});
+LockGRbtn5.addEventListener('click', function() {
+    isLocked5 = !isLocked5; // toggle for true/false
+    
+
+    if (isLocked5) {
+        LockGRbtn5.textContent = "Unlock Room";
+        alert("Room 5 is now locked. No more changes allowed.");
+        addLog("Room 5 has been Locked.");
+    } else {
+        LockGRbtn5.textContent = "Lock Room";
+        alert("Room 5 is now unlocked. You may edit the guest list.");
+        addLog("Room 5 has been unlocked.")
+    }
+});
+
+
+Guestbtn6.addEventListener('click', function() {
+    const newItemText = GetGuest6.value.trim();
+
+    if (isLocked6) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    // Validate input
+    if (newItemText === '') {
+        alert('Please enter an Guest Name.');
+        return;
+    }
+
+    // if list is over 5
+    if (Guestlist6.children.length >= 5) {
+        alert('Only 5 guests can be checked in.');
+        return;
+    }
+
+    // Create a new list item
+    const li = document.createElement('li');
+    li.textContent = newItemText;
+
+    // Append the new item to the list
+    Guestlist6.appendChild(li);
+
+    addLog(`Added guest to room 6: ${newItemText}`);
+
+    // Clearing the input field
+    GetGuest6.value = '';
+    GetGuest6.focus();
+});
+GetGuest6.addEventListener('keypress', function(e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        Guestbtn6.click(); // simulate button press
+    }
+});
+ReGuestbtn6.addEventListener('click', function() {
+    const removeText = GetGuest6.value.trim();
+
+    if (isLocked6) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (removeText === '') {
+        alert('Please enter a Guest to Remove.');
+        return;
+    }
+
+    if (Guestlist6.children.length === 0) {
+        alert('No Guests have checked into the room.');
+        return;
+    }
+
+    let found = false;
+
+    for (let li of Guestlist6.children) {
+        if (li.textContent.toLowerCase() === removeText.toLowerCase()) {
+            Guestlist6.removeChild(li);
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        alert('Guest not found in the list.');
+    }
+
+    addLog(`Removed guest from room 6: ${removeText}`);
+
+    GetGuest6.value = '';
+    GetGuest6.focus();
+});
+ReallGuestsbtn6.addEventListener('click', function() {
+    const removeText = GetGuest6.value.trim();
+
+    if (isLocked6) {
+        alert("Room is locked. No more changes allowed.");
+        return;
+    }
+
+    if (Guestlist6.children.length === 0) {
+        alert('No Guests are checked into this room.');
+        return;
+    }
+
+    Guestlist6.innerHTML = ''
+
+    addLog(`Removed All Guests from Room 6`);
+
+    GetGuest6.value = '';
+    GetGuest6.focus();
+});
+LockGRbtn6.addEventListener('click', function() {
+    isLocked6 = !isLocked6; // toggle for true/false
+    
+
+    if (isLocked6) {
+        LockGRbtn6.textContent = "Unlock Room";
+        alert("Room 6 is now locked. No more changes allowed.");
+        addLog("Room 6 has been Locked.");
+    } else {
+        LockGRbtn6.textContent = "Lock Room";
+        alert("Room 6 is now unlocked. You may edit the guest list.");
+        addLog("Room 6 has been unlocked.")
+    }
+});
+
+
+ClearLogbtn.addEventListener('click', function() {
+    const logList = document.getElementById('LogList');
+
+    if (logList.children.length === 0) {
+        alert("There is no History");
+        return;
+    }
+
+    logList.innerHTML = '';
+    alert("Guest History has been cleared.");
+});
+
+function addLog(message) {
+    const logList = document.getElementById('LogList');
+    const li = document.createElement('li');
+
+    const now = new Date();
+    const date = now.toLocaleDateString();
+    const time = now.toLocaleTimeString();
+
+    li.textContent = `${message} — ${date} at ${time}`;
+    logList.appendChild(li);
+}
+</script>
+</body>
+</html>
